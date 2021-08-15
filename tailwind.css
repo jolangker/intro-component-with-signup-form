@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .input-wrapper {
+    @apply border flex items-center px-6 justify-between rounded-md focus-within:ring-2 focus-within:ring-moonlight;
+  }
+
+  .input {
+    @apply py-3 w-full font-medium focus:outline-none;
+  }
+
+  .error-message {
+    @apply text-xs italic text-right text-pink-glamour mt-2;
+  }
+
+  .btn-submit {
+    @apply bg-dark-shamrock py-4 rounded-md text-white font-medium shadow-button;
+  }
+}

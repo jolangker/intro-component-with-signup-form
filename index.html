@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon-32x32.png"
+    />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+
+    <title>Frontend Mentor | Intro component with sign up form</title>
+  </head>
+
+  <body
+    class="
+      bg-pink-glamour bg-mobile-pattern
+      lg:bg-desktop-pattern
+      font-poppins
+      lg:min-h-screen lg:flex lg:items-center lg:py-10
+    "
+  >
+    <main
+      class="
+        py-20
+        px-6
+        mx-auto
+        flex flex-col
+        max-w-7xl
+        space-y-14
+        lg:flex-row lg:items-center lg:space-y-0 lg:px-28 lg:space-x-16 lg:py-0
+      "
+    >
+      <section id="intro" class="lg:flex-1">
+        <div class="text-white text-center lg:text-left">
+          <h2 class="text-2xl font-bold lg:text-5xl">
+            Learn to code by watching others
+          </h2>
+          <p class="font-medium mt-5 lg:font-normal">
+            See how experienced developers solve problems in real-time. Watching
+            scripted tutorials is great, but understanding how developers think
+            is invaluable.
+          </p>
+        </div>
+      </section>
+      <section id="content" class="flex-1">
+        <div
+          class="
+            text-white text-center
+            bg-moonlight
+            py-5
+            rounded-xl
+            shadow-custom
+            mb-4
+            px-5
+          "
+          role="banner"
+        >
+          <p>
+            <span class="font-semibold">Try it free 7 days</span> then
+            $20/mo.thereafter
+          </p>
+        </div>
+        <form
+          class="p-6 bg-white rounded-xl flex flex-col space-y-4 shadow-custom"
+        >
+          <div>
+            <div class="input-wrapper">
+              <input type="text" placeholder="First Name" class="input" />
+              <img
+                src="assets/images/icon-error.svg"
+                alt="icon-error"
+                class="hidden"
+              />
+            </div>
+            <p class="error-message hidden">First Name cannot be empty</p>
+          </div>
+          <div>
+            <div class="input-wrapper">
+              <input type="text" placeholder="Last Name" class="input" />
+              <img
+                src="assets/images/icon-error.svg"
+                alt="icon-error"
+                class="hidden"
+              />
+            </div>
+            <p class="error-message hidden">Last Name cannot be empty</p>
+          </div>
+          <div>
+            <div class="input-wrapper">
+              <input type="text" placeholder="Email Address" class="input" />
+              <img
+                src="assets/images/icon-error.svg"
+                alt="icon-error"
+                class="hidden"
+              />
+            </div>
+            <p class="error-message hidden">Email Address cannot be empty</p>
+            <p class="error-message hidden">Look like this not an email</p>
+          </div>
+          <div>
+            <div class="input-wrapper">
+              <input type="password" placeholder="Password" class="input" />
+              <img
+                src="assets/images/icon-error.svg"
+                alt="icon-error"
+                class="hidden"
+              />
+            </div>
+            <p class="error-message hidden">Password cannot be empty</p>
+          </div>
+
+          <button type="submit" class="btn-submit">
+            CLAIM YOUR FREE TRIAL
+          </button>
+          <p class="text-xs text-center text-purple-heather">
+            By clicking the button, you are agreeing to our
+            <span class="font-bold text-pink-glamour">Terms and Services</span>
+          </p>
+        </form>
+      </section>
+    </main>
+
+    <!-- Force Adding Unused Style -->
+    <div class="ring-2 ring-pink-glamour hidden"></div>
+
+    <script src="js/script.js"></script>
+  </body>
+</html>
